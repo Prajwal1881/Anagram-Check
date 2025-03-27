@@ -3,11 +3,12 @@ import java.util.Scanner;
 
 public class AnagramChecker {
     public static boolean areAnagrams(String str1, String str2) {
-        // Remove spaces and convert to lowercase for uniformity
+        
+        // Remove spaces and convert to lowercase
         str1 = str1.replaceAll("\\s", "").toLowerCase();
         str2 = str2.replaceAll("\\s", "").toLowerCase();
         
-        // If lengths are different, they cannot be anagrams
+        // If lengths are different, they can't be anagrams
         if (str1.length() != str2.length()) {
             return false;
         }
